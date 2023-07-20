@@ -1,0 +1,27 @@
+﻿@page "/counter"
+
+<PageTitle>Counter</PageTitle>
+
+
+
+<h1>Counter</h1>
+
+<p>Counter start : @Deb</p>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-success" @onclick="IncrementCount">Click me</button>
+
+@code {
+
+    [Parameter]
+    public int Deb { get; set; }
+
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount+=27;
+    }
+}
