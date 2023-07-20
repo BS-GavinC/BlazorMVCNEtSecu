@@ -1,0 +1,16 @@
+﻿@inject IJSRuntime js
+
+
+<button @onclick="PlaySound">THE UWU !</button>
+
+<audio id="uwu" src="./sounds/UwU.mp3"></audio>
+
+
+@code {
+
+    void PlaySound()
+    {
+        js.InvokeVoidAsync("eval", "document.getElementById('uwu').play();");
+    }
+
+}

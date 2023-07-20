@@ -15,4 +15,8 @@
     <ProjectReference Include="..\Shared\BlazorMVCNEtSecu.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\sounds\" />
+  </ItemGroup>
+
 </Project>
